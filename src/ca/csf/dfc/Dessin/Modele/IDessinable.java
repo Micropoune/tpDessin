@@ -9,5 +9,5 @@ package ca.csf.dfc.Dessin.Modele;
  */
 public interface IDessinable {
 	void dessiner(FormeGraphique p_formeGraphique);
-	public FormeGraphique getbjetDessine();
+	public FormeGraphique getobjetDessine();
 }
