@@ -13,8 +13,7 @@ public abstract class FormeGeometrique extends FormeGraphique {
 
 	
 	private Color m_CouleurRemplissage;
-	private int m_ValX;
-	private int m_ValY;
+	private Emplacement m_Emplacement;
 	private int m_Largeur;
 	private int m_Hauteur;
 /**
@@ -29,8 +28,8 @@ public abstract class FormeGeometrique extends FormeGraphique {
 			int p_Largeur, int p_Hauteur) {
 			super(p_CouleurContour, p_Epaisseur, p_Emplacement);
 			this.m_CouleurRemplissage=p_CouleurRemplissage;
-			this.m_ValX=p_ValX;
-			this.m_ValY=p_ValY;
+			this.m_Emplacement.setX(p_ValX);
+			this.m_Emplacement.setY(p_ValY);
 			this.m_Hauteur=p_Hauteur;
 			this.m_Largeur=p_Hauteur;
 	}
