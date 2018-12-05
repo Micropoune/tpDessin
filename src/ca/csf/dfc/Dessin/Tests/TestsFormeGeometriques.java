@@ -3,11 +3,7 @@
  */
 package ca.csf.dfc.Dessin.Tests;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import java.awt.Color;
-
-import org.junit.jupiter.api.Test;
 
 import ca.csf.dfc.Dessin.Modele.Emplacement;
 import ca.csf.dfc.Dessin.Modele.FormeGeometrique;

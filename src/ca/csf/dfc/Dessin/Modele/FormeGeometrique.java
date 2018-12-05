@@ -1,9 +1,12 @@
-package ca.csf.dfc.Dessin.Modele;
+
 /**
  * 
  */
 
 import java.awt.Color;
+
+import ca.csf.dfc.Dessin.Modele.Emplacement;
+import ca.csf.dfc.Dessin.Modele.FormeGraphique;
 
 /**
  * @author Sylvie
@@ -13,7 +16,6 @@ public abstract class FormeGeometrique extends FormeGraphique {
 
 	
 	private Color m_CouleurRemplissage;
-	private Emplacement m_Emplacement;
 	private int m_Largeur;
 	private int m_Hauteur;
 /**
@@ -65,6 +67,7 @@ public abstract class FormeGeometrique extends FormeGraphique {
 	public void setHauteur(int p_Hauteur) {
 		this.m_Hauteur = p_Hauteur;
 	}
+	
 
 }
 

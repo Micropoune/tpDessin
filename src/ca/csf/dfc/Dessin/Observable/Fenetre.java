@@ -25,7 +25,7 @@ public class Fenetre extends JFrame implements Observer {
 	
 	
 private ModeleDessin m_modeleDessin=new ModeleDessin();
-private ControleurAbstraitDessin controleur;
+
 
 
 JPanel conteneurPrincipal=new JPanel();
@@ -47,7 +47,7 @@ JMenu menuEdit=new JMenu("Édition");
 JPanel buttonPanel=new JPanel();
 JPanel dessinPanel=new JPanel();
 	
-	public Fenetre(ControleurAbstraitDessin p_controler) {
+	public Fenetre() {
 
 		this.setTitle("Fenêtre de travail");
 		this.setSize(1500, 1100);
