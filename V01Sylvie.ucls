@@ -84,7 +84,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="10" language="java" name="ca.csf.dfc.Dessin.Observable.VueEspaceDeTravail" 
+  <class id="10" language="java" name="ca.csf.dfc.Dessin.vue.VueEspaceDeTravail"
     project="TP_POO_VERSIONFUSIONNEE" 
     file="/TP_POO_VERSIONFUSIONNEE/src/ca/csf/dfc/Dessin/Observable/VueEspaceDeTravail.java" binary="false" 
     corner="BOTTOM_RIGHT">    

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.csf.dfc.Dessin.Observable;
+package ca.csf.dfc.Dessin.vue;
 
 import java.util.ArrayList;
 import java.util.List;
