@@ -11,9 +11,9 @@ import java.awt.Color;
  */
 public abstract class FormeGraphique {
 	
-	public Color m_CouleurContour;
-	public int m_Epaisseur;
-	public Emplacement m_Emplacement;
+	protected Color m_CouleurContour;
+	protected int m_Epaisseur;
+	protected Emplacement m_Emplacement;
 	
 	/**
 	 * Constructeur par initialisation
@@ -21,7 +21,6 @@ public abstract class FormeGraphique {
 	public FormeGraphique() {
 		
 	}
-	
 	/**
 	   * Constructeur d'initialisation
 	   * 

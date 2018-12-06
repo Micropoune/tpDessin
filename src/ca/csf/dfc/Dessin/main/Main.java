@@ -4,6 +4,7 @@
 package ca.csf.dfc.Dessin.main;
 
 import ca.csf.dfc.Dessin.Modele.ModeleDessin;
+import ca.csf.dfc.Dessin.controlleur.GrosControlleur;
 import ca.csf.dfc.Dessin.vue.Fenetre;
 
 /**
@@ -18,19 +19,19 @@ public class Main {
 	public static void main(String[] args) {
 
 		//Instanciation du modele
-		ModeleDessin modeleDessinAbstrait=new ModeleDessin();
+		ModeleDessin modeleDessin=new ModeleDessin();
 		
 		////creation controleur
 
 		//Le gros controlleur existe seulement dans thomas le train.
-	//	ControleurAbstraitDessin controleur=new ControleurDessin(modeleDessinAbstrait);
+		GrosControlleur controlleur=new GrosControlleur(modeleDessin);
 		
 		//creation de la vue
 
 
-		Fenetre f=new Fenetre();
+		Fenetre f=new Fenetre(controlleur);
 		
-		modeleDessinAbstrait.addObserver(f);
+	
 		f.setVisible(true);
 
 	}
