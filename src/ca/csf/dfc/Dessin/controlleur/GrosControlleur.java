@@ -6,6 +6,8 @@ import ca.csf.dfc.Dessin.Modele.Rectangle;
 import java.awt.*;
 
 public class GrosControlleur {
+	private DessinableFormeRectangle m_formeADessiner = new DessinableFormeRectangle();
+
 
     /**
 	 * @param p_modeleDessin
@@ -18,7 +20,7 @@ public class GrosControlleur {
     {
         Color brun_sylvie= new Color(165,42,42);
         Emplacement p_emplacement=new Emplacement(10,10);
-		Ligne l = new Ligne(brun_sylvie, 5, p_emplacement,10, 10, 10, 10);
+		Ligne l = new LigneDroite(brun_sylvie, 5, p_emplacement,10, 10, 10, 10);
 		p_dessin.addForme(l);
 		p_dessin.notifyObservers();
 		
@@ -28,8 +30,9 @@ public class GrosControlleur {
 		Color brun_sylvie= new Color(165,42,42);
     
         Emplacement emplacement=new Emplacement(200,200);
-		Rectangle r=new Rectangle(brun_sylvie, 10, emplacement, Color.black, 100, 100, 100, 100) ;
+		Rectangle r=new Rectangle(brun_sylvie, 10, emplacement, Color.black, p_x1, p_y1, p_x2, p_y2) ;
 		p_dessin.addForme(r);
+		this.m_formeADessiner.dessiner(r);
 		p_dessin.notifyObservers();
 		
 	}
